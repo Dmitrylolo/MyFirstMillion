@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstMillion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gTZ-RD-VUf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9SK-hn-Wm2">
+                                <rect key="frame" x="50" y="64" width="314" height="233"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vHG-eg-jP4">
+                                <rect key="frame" x="30" y="64" width="354" height="732"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="66P-76-9uO">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="732"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-kt-5N8">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="732"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-Mf-8TF" customClass="OurOwnButton" customModule="MyFirstMillion" customModuleProvider="target">
+                                <rect key="frame" x="177" y="646" width="60" height="30"/>
+                                <state key="normal" title="Бросить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pC4-yf-pRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vHG-eg-jP4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="10Y-GH-y2v"/>
+                            <constraint firstAttribute="trailing" secondItem="9SK-hn-Wm2" secondAttribute="trailing" constant="50" id="3Bm-lA-pjz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gTZ-RD-VUf" secondAttribute="bottom" id="8nH-mX-53Y"/>
+                            <constraint firstAttribute="trailing" secondItem="vHG-eg-jP4" secondAttribute="trailing" constant="30" id="ERu-YH-KFS"/>
+                            <constraint firstItem="gTZ-RD-VUf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FIv-Y2-zmi"/>
+                            <constraint firstItem="9SK-hn-Wm2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="FyH-DW-5N8"/>
+                            <constraint firstItem="ecu-Mf-8TF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MWP-5Q-ooU"/>
+                            <constraint firstItem="vHG-eg-jP4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Pm4-Lb-Sdw"/>
+                            <constraint firstAttribute="bottom" secondItem="vHG-eg-jP4" secondAttribute="bottom" constant="100" id="UAC-O2-lda"/>
+                            <constraint firstItem="gTZ-RD-VUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y5Q-R1-Exf"/>
+                            <constraint firstItem="gTZ-RD-VUf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cgt-p1-IKO"/>
+                            <constraint firstItem="vHG-eg-jP4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pkR-Gh-DXl"/>
+                            <constraint firstItem="9SK-hn-Wm2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rgS-ub-LaM"/>
+                            <constraint firstItem="9SK-hn-Wm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sKd-Kn-GAD"/>
+                            <constraint firstItem="ecu-Mf-8TF" firstAttribute="top" secondItem="vHG-eg-jP4" secondAttribute="bottom" constant="-150" id="sRz-RW-Jnj"/>
+                            <constraint firstItem="gTZ-RD-VUf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sbf-sr-1Rx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gTZ-RD-VUf" secondAttribute="trailing" id="y3W-Ua-YEB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="diceImage1" destination="AbD-kt-5N8" id="41m-SD-J0p"/>
+                        <outlet property="diceImage2" destination="66P-76-9uO" id="Ap4-sR-hYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1443.8399658203125" height="960"/>
+        <image name="dice1" width="557" height="557"/>
+        <image name="logo" width="460.79998779296875" height="233.52000427246094"/>
+    </resources>
+</document>
